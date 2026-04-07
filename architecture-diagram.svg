@@ -1,0 +1,96 @@
+<svg width="680" height="680" viewBox="0 0 680 680" xmlns="http://www.w3.org/2000/svg" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif">
+<style>
+.title { font-size: 14px; font-weight: 500; fill: #2c2c2a; }
+.node-title { font-size: 14px; font-weight: 500; }
+.node-sub { font-size: 12px; font-weight: 400; }
+.gray-fill { fill: #F1EFE8; stroke: #5F5E5A; }
+.gray-text-title { fill: #2C2C2A; }
+.gray-text-sub { fill: #5F5E5A; }
+.teal-fill { fill: #E1F5EE; stroke: #0F6E56; }
+.teal-text-title { fill: #04342C; }
+.teal-text-sub { fill: #0F6E56; }
+.purple-fill { fill: #EEEDFE; stroke: #534AB7; }
+.purple-text-title { fill: #26215C; }
+.purple-text-sub { fill: #534AB7; }
+.coral-fill { fill: #FAECE7; stroke: #993C1D; }
+.coral-text-title { fill: #4A1B0C; }
+.coral-text-sub { fill: #993C1D; }
+.arr { stroke: #5F5E5A; stroke-width: 1.5; fill: none; }
+</style>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M2 1L8 5L2 9" fill="none" stroke="#5F5E5A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></marker>
+</defs>
+
+<text class="title" x="40" y="30">Inputs</text>
+
+<rect class="gray-fill" x="40" y="50" width="180" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title gray-text-title" x="130" y="74" text-anchor="middle" dominant-baseline="central">BASECAMP Clipper</text>
+<text class="node-sub gray-text-sub" x="130" y="92" text-anchor="middle" dominant-baseline="central">Browser, one click capture</text>
+
+<rect class="gray-fill" x="240" y="50" width="180" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title gray-text-title" x="330" y="74" text-anchor="middle" dominant-baseline="central">Drop Zone files</text>
+<text class="node-sub gray-text-sub" x="330" y="92" text-anchor="middle" dominant-baseline="central">.txt or .md, articles or thoughts</text>
+
+<rect class="gray-fill" x="440" y="50" width="180" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title gray-text-title" x="530" y="74" text-anchor="middle" dominant-baseline="central">YouTube URLs</text>
+<text class="node-sub gray-text-sub" x="530" y="92" text-anchor="middle" dominant-baseline="central">Transcripts auto fetched</text>
+
+<line x1="130" y1="106" x2="130" y2="156" class="arr" marker-end="url(#arrow)"/>
+<line x1="330" y1="106" x2="330" y2="156" class="arr" marker-end="url(#arrow)"/>
+<line x1="530" y1="106" x2="530" y2="156" class="arr" marker-end="url(#arrow)"/>
+
+<text class="title" x="40" y="140">Watcher layer</text>
+
+<rect class="teal-fill" x="40" y="160" width="180" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title teal-text-title" x="130" y="184" text-anchor="middle" dominant-baseline="central">Dropzone watcher</text>
+<text class="node-sub teal-text-sub" x="130" y="202" text-anchor="middle" dominant-baseline="central">HTTP listener on 7337</text>
+
+<rect class="teal-fill" x="240" y="160" width="180" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title teal-text-title" x="330" y="184" text-anchor="middle" dominant-baseline="central">For Her watcher</text>
+<text class="node-sub teal-text-sub" x="330" y="202" text-anchor="middle" dominant-baseline="central">Polls For Her drop zone</text>
+
+<rect class="teal-fill" x="440" y="160" width="180" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title teal-text-title" x="530" y="184" text-anchor="middle" dominant-baseline="central">YouTube watcher</text>
+<text class="node-sub teal-text-sub" x="530" y="202" text-anchor="middle" dominant-baseline="central">Chunks long transcripts</text>
+
+<path d="M130 216 L130 250 L330 250 L330 286" class="arr" marker-end="url(#arrow)"/>
+<line x1="330" y1="216" x2="330" y2="286" class="arr" marker-end="url(#arrow)"/>
+<path d="M530 216 L530 250 L330 250 L330 286" class="arr" marker-end="url(#arrow)"/>
+
+<text class="title" x="40" y="280">Shared processing</text>
+
+<rect class="purple-fill" x="150" y="290" width="380" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title purple-text-title" x="340" y="314" text-anchor="middle" dominant-baseline="central">Relevance gate then corpus retrieval</text>
+<text class="node-sub purple-text-sub" x="340" y="332" text-anchor="middle" dominant-baseline="central">Reads up to 50 related notes for context</text>
+
+<path d="M250 346 L250 380 L160 380 L160 416" class="arr" marker-end="url(#arrow)"/>
+<path d="M430 346 L430 380 L520 380 L520 416" class="arr" marker-end="url(#arrow)"/>
+
+<text class="title" x="40" y="410">Model split</text>
+
+<rect class="purple-fill" x="40" y="420" width="240" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title purple-text-title" x="160" y="444" text-anchor="middle" dominant-baseline="central">Claude Sonnet</text>
+<text class="node-sub purple-text-sub" x="160" y="462" text-anchor="middle" dominant-baseline="central">BASECAMP, research accuracy</text>
+
+<rect class="purple-fill" x="400" y="420" width="240" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title purple-text-title" x="520" y="444" text-anchor="middle" dominant-baseline="central">Claude Opus</text>
+<text class="node-sub purple-text-sub" x="520" y="462" text-anchor="middle" dominant-baseline="central">For Her, voice fidelity</text>
+
+<line x1="160" y1="476" x2="160" y2="536" class="arr" marker-end="url(#arrow)"/>
+<line x1="520" y1="476" x2="520" y2="596" class="arr" marker-end="url(#arrow)"/>
+
+<text class="title" x="40" y="530">Vault outputs</text>
+
+<rect class="coral-fill" x="40" y="540" width="240" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title coral-text-title" x="160" y="564" text-anchor="middle" dominant-baseline="central">Source and Investment notes</text>
+<text class="node-sub coral-text-sub" x="160" y="582" text-anchor="middle" dominant-baseline="central">BASECAMP Knowledge folder</text>
+
+<line x1="160" y1="596" x2="160" y2="616" class="arr" marker-end="url(#arrow)"/>
+
+<rect class="purple-fill" x="40" y="620" width="240" height="44" rx="8" stroke-width="0.5"/>
+<text class="node-title purple-text-title" x="160" y="642" text-anchor="middle" dominant-baseline="central">Entity note manager</text>
+
+<rect class="coral-fill" x="400" y="600" width="240" height="56" rx="8" stroke-width="0.5"/>
+<text class="node-title coral-text-title" x="520" y="624" text-anchor="middle" dominant-baseline="central">For Her vault</text>
+<text class="node-sub coral-text-sub" x="520" y="642" text-anchor="middle" dominant-baseline="central">Legacy notes, private</text>
+</svg>
