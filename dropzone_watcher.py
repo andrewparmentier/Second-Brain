@@ -32,7 +32,7 @@ import yaml
 
 # ─── Configuration ────────────────────────────────────────────────────────────
 
-VAULT_ROOT           = Path("/Users/parmstar/Documents/OBSIDIAN MASTER/BASECAMP")
+VAULT_ROOT           = Path(os.environ.get("VAULT_ROOT", Path.home() / "Documents/OBSIDIAN MASTER/BASECAMP"))
 DROP_ZONE            = VAULT_ROOT / "01-Drop Zone"
 YT_DROP_ZONE         = DROP_ZONE / "YT Drop Zone"
 ARTICLES_DIR         = VAULT_ROOT / "05-Resources/Sources"
@@ -44,7 +44,7 @@ HTTP_PORT = 7337  # localhost only — browser extension ingest endpoint
 
 INGEST_LOG    = VAULT_ROOT / "log.md"
 CORPUS_INDEX  = VAULT_ROOT / "index.md"
-ENTITY_MANAGER = Path("/Users/parmstar/Documents/Python Scripts/entity_note_manager.py")
+ENTITY_MANAGER = Path(os.environ.get("ENTITY_MANAGER", Path.home() / "Documents/Python Scripts/entity_note_manager.py"))
 
 DOMAIN_TAGS = {
     "finance", "technology", "markets", "strategy",
